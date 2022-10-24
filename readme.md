@@ -12,6 +12,9 @@ from markupsafe import escape
 def user_page(name):
     return f'User: {escape(name)}'
 
+## 请求和响应
+jsonify函数返回json数据
+
 ## 端点&url_for
 根据端点返回url:
 from flask import url_for
