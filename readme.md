@@ -33,6 +33,13 @@ Jinja2 的语法和 Python 大致相同，你在后面会陆续接触到一些�
 {% ... %} 用来标记语句，比如 if 语句，for 语句等。
 {# ... #} 用来写注释。
 
+@app.context_processor装饰器添加模板上下文处理函数，注入到每一个模板
+
+模板继承：基模板定义块，子模板继承
+{% extends 'base.html' %}
+{% block content %}
+{% endblock %}
+
 ## 静态文件
 根路径创建static文件夹 默认读取
 
@@ -51,4 +58,4 @@ after_this_request: 装饰视图函数，请求结束之后执行
 ## 请求上下文
 
 
-## 模板语法
+## 表单

@@ -15,6 +15,10 @@ movies = [
     {'title': 'The Pork of Music', 'year': '2012'},
 ]
 
+@app.context_processor
+def inject_user():  # 函数名可以随意修改
+    user = '张三'
+    return dict(user=user)  # 需要返回字典，等同于 return {'user': user}
 
 @app.route('/')
 def index():
