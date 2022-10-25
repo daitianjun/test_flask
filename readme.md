@@ -40,9 +40,12 @@ Jinja2 的语法和 Python 大致相同，你在后面会陆续接触到一些�
 {% block content %}
 {% endblock %}
 
+宏：相当于函数，减少代码重用
+包含：
+{% include 'header.html' %}
 ## 静态文件
 根路径创建static文件夹 默认读取
-
+前端将url_for 函数封装到了环境变量
 ## 请求钩子
 装饰器
 before_first_request:第一个请求之前运行 ,其实就是服务器启动后收到的第一个请求运行一次，不是每个用户的第一个请求
